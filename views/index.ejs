@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Message Board</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+
+</head>
+<body>
+    <div class="content">
+    <%- include('navbar', {links: links}) %>
+
+    <h1>These are the messages!</h1>
+
+    <p class="messages">
+        <% for (let i=0; i < messages.length; i++) { %>
+            <li>
+                Message: <%= messages[i].text %> 
+            </li>
+            <li>
+                User <%= messages[i].user %>
+            </li>
+            <li>
+               Date: <%= messages[i].added %>
+            </li>
+            <hr>
+            <% } %>
+    </p>
+    
+    <%- include('footer') %>
+</div>
+</body>
+</html>

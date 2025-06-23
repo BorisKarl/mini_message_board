@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Q;
+    src: url(../fonts/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+
+* {
+    font-family: "Q", Arial, Helvetica, sans-serif;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    line-height: 2;
+}
+
+hr {
+    color:black;
+}
